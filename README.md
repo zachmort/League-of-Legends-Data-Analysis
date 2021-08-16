@@ -1,3 +1,6 @@
+<!-- Add banner here -->
+![Banner](https://github.com/zachmort/League-of-Legends-Data-Analysis/blob/master/league-of-legends.jpg)
+
 # League-of-Legends-Data-Analysis
 Machine Learning, Data Visualization and Data Analysis project involving League of Legends Data
 
