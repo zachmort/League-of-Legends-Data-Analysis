@@ -11,7 +11,7 @@ Machine Learning, Data Visualization and Data Analysis project involving League 
 
 <!-- Describe your project in brief -->
 
-The project title should be self-explanatory and try not to make it a mouthful. (Although exceptions exist- **awesome-readme-writing-guide-for-open-source-projects** - would have been a cool name)
+Have you ever wondered what factors in the video game League of Legends have a significant impact on winning? Well now we have an answer!  
 
 # Demo-Preview
 <!-- Add a demo for your project -->
@@ -20,22 +20,10 @@ After you have written about your project, it is a good idea to have a demo/prev
 
 Here is a random GIF as a placeholder.
 
-![Random GIF](https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif)
+![Picture](https://github.com/zachmort/League-of-Legends-Data-Analysis/blob/main/league-of-legends.jpg)
 
 # Table of contents
-
-After you have introduced your project, it is a good idea to add a **Table of contents** or **TOC** as **cool** people say it. This would make it easier for people to navigate through your README and find exactly what they are looking for.
-
-Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README.
-
 - [Project Title](#project-title)
 - [Demo-Preview](#demo-preview)
 - [Table of contents](#table-of-contents)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Development](#development)
-- [Contribute](#contribute)
-    - [Sponsor](#sponsor)
-    - [Adding new features or fixing bugs](#adding-new-features-or-fixing-bugs)
-- [License](#license)
-- [Footer](#footer)
+-Packages Used
