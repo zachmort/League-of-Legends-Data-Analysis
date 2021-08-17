@@ -20,7 +20,7 @@ After you have written about your project, it is a good idea to have a demo/prev
 
 Here is a random GIF as a placeholder.
 
-![Picture](https://github.com/zachmort/League-of-Legends-Data-Analysis/blob/main/league-of-legends.jpg)
+![Picture](https://github.com/zachmort/League-of-Legends-Data-Analysis/blob/main/)
 
 # Table of contents
 - [Project Title](#project-title)
