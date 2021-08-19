@@ -23,8 +23,9 @@ Here is a random GIF as a placeholder.
 
 ![Picture](https://github.com/zachmort/League-of-Legends-Data-Analysis/blob/main/)
 
+# Packages Used
 # Table of contents
 - [Project Title](#project-title)
 - [Demo-Preview](#demo-preview)
 - [Table of contents](#table-of-contents)
--Packages Used
+- [Packages Used](#packages-used)
