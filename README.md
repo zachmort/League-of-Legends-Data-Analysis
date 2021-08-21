@@ -21,7 +21,7 @@ After you have written about your project, it is a good idea to have a demo/prev
 
 Here is a random GIF as a placeholder.
 
-![Picture](https://github.com/zachmort/League-of-Legends-Data-Analysis/blob/main/)
+![Picture](https://github.com/zachmort/League-of-Legends-Data-Analysis/blob/main/creepscroe_vs_earnedgold_scatterplot.png)
 
 # Packages Used
 # Table of contents
