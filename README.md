@@ -14,18 +14,32 @@ Download link: https://oracleselixir.com/tools/downloads
 
 Have you ever wondered what factors in the video game League of Legends have a significant impact on winning? Well now we have an answer!  
 
-# Demo-Preview
+# Preview
 <!-- Add a demo for your project -->
-
-After you have written about your project, it is a good idea to have a demo/preview(**video/gif/screenshots** are good options) of your project so that people can know what to expect in your project. You could also add the demo in the previous section with the product description.
-
-Here is a random GIF as a placeholder.
+Below is a screenshot of one of the interactive PLotly charts:
+  This simple scatter plot of "Earned Gold" and "Total Creep Score"
 
 ![Picture](https://github.com/zachmort/League-of-Legends-Data-Analysis/blob/main/creepscroe_vs_earnedgold_scatterplot.png)
 
 # Packages Used
+  Tidyverse
+  Magrittr
+  Cowplot
+  Pacman
+  Rio
+  Rmarkdown
+  Lubridate 
+  Grid
+  Corrplot 
+  Xtable
+  Leaps 
+  Caret
+  ROCR 
+  Plotly
+  RColorBrewer
+  
 # Table of contents
 - [Project Title](#project-title)
-- [Demo-Preview](#demo-preview)
+- [Preview](#preview)
 - [Table of contents](#table-of-contents)
 - [Packages Used](#packages-used)
