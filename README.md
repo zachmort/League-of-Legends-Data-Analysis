@@ -39,7 +39,7 @@ Below is a screenshot of one of the interactive PLotly charts:
   RColorBrewer
   
 # Table of contents
-- [Project Title](# League-of-Legends-Data-Analysis)
+- [Project Title](#League-of-Legends-Data-Analysis)
 - [Preview](#preview)
 - [Table of contents](#table-of-contents)
-- [Packages Used](#Packages Used)
+- [Packages Used](#Packages-Used)
