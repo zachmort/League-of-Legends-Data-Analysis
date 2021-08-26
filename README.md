@@ -10,14 +10,14 @@ Machine Learning, Data Visualization and Data Analysis project involving League 
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/zachmort/League-of-Legends-Data-Analysis)
 
 <!-- Describe your project in brief -->
-Download link: https://oracleselixir.com/tools/downloads
+Data download link: https://oracleselixir.com/tools/downloads
 
 Have you ever wondered what factors in the video game League of Legends have a significant impact on winning? Well now we have an answer!  
 
 # Preview
 <!-- Add a demo for your project -->
 Below is a screenshot of one of the interactive PLotly charts:
-  This simple scatter plot of "Earned Gold" and "Total Creep Score"
+  This is a scatter plot of "Earned Gold" and "Total Creep Score"
 
 ![Picture](https://github.com/zachmort/League-of-Legends-Data-Analysis/blob/main/creepscroe_vs_earnedgold_scatterplot.png)
 
@@ -39,7 +39,7 @@ Below is a screenshot of one of the interactive PLotly charts:
   RColorBrewer
   
 # Table of contents
-- [Project Title](#project-title)
+- [Project Title](# League-of-Legends-Data-Analysis)
 - [Preview](#preview)
 - [Table of contents](#table-of-contents)
-- [Packages Used](#packages-used)
+- [Packages Used](#Packages Used)
