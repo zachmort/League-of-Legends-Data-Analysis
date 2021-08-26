@@ -22,21 +22,21 @@ Below is a screenshot of one of the interactive PLotly charts:
 ![Picture](https://github.com/zachmort/League-of-Legends-Data-Analysis/blob/main/creepscroe_vs_earnedgold_scatterplot.png)
 
 # Packages Used
-  Tidyverse
-  Magrittr
-  Cowplot
-  Pacman
-  Rio
-  Rmarkdown
-  Lubridate 
-  Grid
-  Corrplot 
-  Xtable
-  Leaps 
-  Caret
-  ROCR 
-  Plotly
-  RColorBrewer
+  -Tidyverse
+  -Magrittr
+  -Cowplot
+  -Pacman
+  -Rio
+  -Rmarkdown
+  -Lubridate 
+  -Grid
+  -Corrplot 
+  -Xtable
+  -Leaps 
+  -Caret
+  -ROCR 
+  -Plotly
+  -RColorBrewer
   
 # Table of contents
 - [Project Title](#League-of-Legends-Data-Analysis)
