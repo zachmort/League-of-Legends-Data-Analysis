@@ -9,7 +9,7 @@
 #   Can we predict what team will win a game based on certain game factors 
 #can we find out what factors of a game have statistical significance to wiinning any given match
 
-#Using KNN if you are the general manager of a team it is imperitive to know what players are like eachother when free agency and player contracts are up
+#Using K Means Clustering if you are the general manager of a team it is imperitive to know what players are like eachother when free agency and player contracts are up
 #you might be able to aquire a comprable player to the one you have now on a smaller contract OR certain play styles my not work with your team composition so you my want to stay away from certain players
 
 
@@ -106,7 +106,7 @@ class(player_data$date)
 head(player_data)
 
 #Confirming Date and team are in the correct format
-class(player_data$date_adj)
+class(player_data$date)
 class(player_data$team)
 
 #Summary of new dataset
@@ -496,6 +496,8 @@ plot_grid(golddiff_chovyVSshowmaker,golddiff_everyone,
           labels = c("Chovy VS ShowMaker", "All Players"),
           ncol = 2, nrow = 1)
 
+
+
 #### logistic regression analysis and prep ##################################################################
 
 #checking to see if there are variables that are highly correlated with each other
@@ -762,47 +764,48 @@ exp(cbind(OR = coef(finalmodel), confint(finalmodel)))
 ####### K MEANS CLUSTERING#####################
 #looking at which players are the most similar
 
+#try it with and without position variable
+player.data.final <- all_data %>%
+  filter(datacompleteness == "complete" & playoffs == 0 & position != "team") %>%
+  select(c("position", "kills":"assists", "firstbloodkill", "dpm", "damagetakenperminute", "vspm", "cspm", "league", "player"))
+
+
+tier1.leagues.kmeans <- filter(player.data.final, league %in% c("LPL", "LCK","LEC", "LCS", "PCS", "CBLOL", "LCO", "LCL", "LJL", "LLA","TCL","VCS"))
+
+player.data.final <- tier1.leagues.kmeans
+  
+str(player.data.final)
+
+player.data.final$firstbloodkill <- as.factor(player.data.final$firstbloodkill)
+player.data.final$position <- as.factor(player.data.final$position)
+
+str(player.data.final)
+
+player.data.final.labels <- player.data.final$position
+
+player.data.final.scaled <- player.data.final %>%
+  mutate_if(is.numeric, scale)
+
+player.data.final.scaled <- player.data.final.scaled %>%
+  select(-c("player", "league", "position"))
+
+
+
 library(tidyverse)  # data manipulation
 library(cluster)    # clustering algorithms
 library(factoextra) # clustering algorithms & visualization
 
 #remove missing values
-df <- na.omit(team_data_regular_season)
+df.kmeans <- na.omit(player.data.final.scaled)
 
-#############estimating the optimal number or clusters#########
-set.seed(123)
-
-# function to compute total within-cluster sum of square 
-wss <- function(k) {
-  kmeans(team_data_regular_season, k, nstart = 10 )$tot.withinss
-}
-
-# Compute and plot wss for k = 1 to k = 15
-k.values <- 1:15
-
-# extract wss for 2-15 clusters
-wss_values <- map_dbl(k.values, wss)
-
-plot(k.values, wss_values,
-     type="b", pch = 19, frame = FALSE, 
-     xlab="Number of clusters K",
-     ylab="Total within-clusters sum of squares")
 
 set.seed(123)
 
-fviz_nbclust(df, kmeans, method = "wss")
+clust.model.1 <- kmeans(player.data.final.scaled, 5, nstart = 100)
+print(clust.model.1)
 
-#once i find the number of clusters use this
-k2 <- kmeans(df, centers = 2, nstart = 25)
-str(k2)
-k2
-
-# Compute k-means clustering with k = 4
-set.seed(123)
-final <- kmeans(df, 4, nstart = 25)
-print(final)
-
-#visualizing the final model
-fviz_cluster(final, data = df)
+table(clust.model.1$cluster, player.data.final.labels)
 
 
+library(cluster)
+clusplot(player.data.final.scaled, clust.model.1$cluster, color = T, shade = T, labels = 0, lines = 0) 
