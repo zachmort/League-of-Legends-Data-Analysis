@@ -19,7 +19,7 @@ I LOVE Esports and especially League of Legends so taking on this project was a 
 
 Some of the questions I looked into:
 - What in game factors (ie Baron , # of kills, # of deaths, Heralds ect.) contribute the most to winning any given game
-- What players have the most similar play styles (My thought process here was if I was a team owner and I wanted a Mid laner that had a certain play style to fit my team what players could I look to sign)
+- Are the roles in the game (Top,Jng,Mid,Bot,Sup) different enough from eachother where we can find unerlying patterns in the data to distinguish them from eachother (My thought process here was if I was a team owner and I wanted a Mid laner that had a certain play style to fit my team what players could I look to sign that play a different position)
 - Compared 2 of the best mid laners in the world in Chovy and Showmaker to answer the questions once and for all who is the best laner
 - What champions have the highest winning percentage
 - and many more!
